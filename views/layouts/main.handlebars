@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../public/css/style.css">
+  <title>Burger Eater</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <!-- Page Container -->
+  <div class="container">
+
+    <center>
+      <h1 class="red_font">Eat da Burger! </h1>
+    </center>
+
+    <!-- Burger Image -->
+    <center>
+      <div class="row">
+        <img src="../../public/img/burger.png"> </div>
+    </center>
+
+    <!-- Page Title -->
+
+    <br>
+
+
+    <!-- Burger Content from index.handlebars -->
+    {{{body}}}
+
+
+    <br>
+
+    <!-- Input New Burgers Form -->
+    <form action="burger/create" method="POST">
+
+      <!-- Text Area Input -->
+      <div class="row">
+        <!-- Empty Div to help center textarea -->
+        <div class="col-md-3"></div>
+
+        <!-- Burger Input Box -->
+        <div class="form-group col-md-6">
+          <center><label for="new_burger" class="red_font">Request a new burger and place your order!</label></center>
+          <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
+        </div>
+
+        <!-- Empty Div to help center textarea -->
+        <div class="col-md-3"></div>
+      </div>
+
+      <!-- Submit Button -->
+      <center>
+        <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
+      </center>
+
+    </form>
+
+    <br>
+
+  </div>
+
+  <!-- Link in jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+
+</body>
+
+</html>
