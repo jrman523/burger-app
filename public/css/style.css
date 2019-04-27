@@ -1,11 +1,10 @@
 body {
-    background-color: #FFA500;
+    background: #FFA500 !important;
 };
 #pic {
   width: 200px;
   height: 250px;
 }
 form {
-
   text-align: center;
 }
