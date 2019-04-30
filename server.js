@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
+const http = require("http");
 var app = express();
 //Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));
@@ -21,3 +22,8 @@ app.use('/', router);
 const PORT = process.env.PORT || 8080;
 console.log(`open on port ${PORT}`);
 app.listen(PORT);
+
+//Ping Server Every 5 min
+setInterval(function() {
+    http.get("https://jad-burger-app.herokuapp.com");
+}, (60000*5));
