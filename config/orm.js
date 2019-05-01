@@ -3,7 +3,7 @@ var connection = require("./connection.js");
 connection.connect(function (err) {
 
   if (err) {
-    console.error("error" + err.stack);
+    console.error(`error ${err.stack}`);
   };
   console.log(`connected as ${connection.threadid}`);
 
