@@ -24,12 +24,12 @@ console.log(`open on port ${PORT}`);
 app.listen(PORT);
 
 //Ping Server Every 5 min
-setInterval(function() {
-    http.get("https://jad-burger-app.herokuapp.com").then(function(res){
-        if(res){
-            console.log("still alive");
-        }else {
-            console.log("ping failed");
-        }
-    });
-}, (60000*5));
+// setInterval(function() {
+//     http.get("https://jad-burger-app.herokuapp.com").then(function(res){
+//         if(res){
+//             console.log("still alive");
+//         }else {
+//             console.log("ping failed");
+//         }
+//     });
+// }, (60000*5));
